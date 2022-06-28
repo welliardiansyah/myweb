@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Separator } from './InfoSections.elements';
 import { Container, Button } from '../../globalStyles';
 import { 
   InfoSec, 
@@ -60,20 +58,15 @@ const InfoSection = ({
 
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                 <HeadingTwo lightText={lightText}>{supplyTotal}</HeadingTwo>
-
-                <Link to="/launch_app">
+                  
+                <a
+                target="_blank"
+                rel="noreferrer"
+                href='https://exchange.neobit.tech'>
                   <Button big fontBig primary={priamry}>
                     {buttonLabel}
                   </Button>
-                </Link>
-
-                <Separator />
-
-                <Link to="/launch_app">
-                  <Button big fontBig primary={priamry}>
-                    {buttonLabelbuy}
-                  </Button>
-                </Link>
+                </a>
 
               </TextWrapper>
             </InfoColumn> 

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { FaBars, FaTimes, FaWallet} from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { AiOutlineRocket } from "react-icons/ai";
 import {IconContext} from 'react-icons/lib';
 import { Button } from '../../globalStyles';
 import { 
@@ -79,12 +80,15 @@ const Navbar = () => {
 
                 <NavItemBtn>
                     {button ? (
-                        <NavBtnLink to='/'>
-                            <Button primary><FaWallet /> Connect Wallet</Button>
-                        </NavBtnLink>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href='https://exchange.neobit.tech'>
+                            <Button primary><AiOutlineRocket /> Launch App</Button>
+                        </a>
                     ) : (
                         <NavBtnLink to='/'>
-                            <Button fontBig primary>Connect Wallet</Button>
+                            <Button fontBig primary><AiOutlineRocket /> Launch App</Button>
                         </NavBtnLink>
                     )}
                 </NavItemBtn>
