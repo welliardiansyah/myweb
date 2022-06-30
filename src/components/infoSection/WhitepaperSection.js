@@ -20,19 +20,7 @@ const WhitepaperSection = ({
             <InfoRow imgStart={imgStart}>
                 <InfoColumn>
                     
-                    <MainCenter>
-                        <MainTextHeaderSmall>
-                            Make a Swap at No Cost
-                        </MainTextHeaderSmall>
-                        
-                    <MainSubTextSmall>
-                        Fee reimbursement of up to 70% in BSW tokens, 10% is credited to your Robi Boost & Squid Energy. You can change the percentage.
-                    </MainSubTextSmall>
                     
-                        <CardContainerLarge>
-                            <CardSingle />
-                        </CardContainerLarge>
-                    </MainCenter>
                 </InfoColumn>
             </InfoRow>   
         </Container>
